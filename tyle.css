@@ -1,0 +1,74 @@
+
+.hand{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    border: solid black;
+    background-color: blue;
+
+}
+.hand:hover{
+   
+    animation: rotate 8s infinite;
+
+}
+@keyframes rotate {
+    0%{
+        rotate: -0deg;
+    }
+    
+    50%{
+        width: 200px;
+        height: 200px;
+        rotate: 180deg;
+    }
+   
+    100%{
+        width: 200px;
+        height: 200px;
+        rotate: -0deg;
+    }
+}
+
+.container{
+    width: 500px;
+    height: 100px;
+    border: solid 3px black;
+    justify-content: center;
+}
+.ball {
+    width: 150px;
+    height: 150px;
+    border-radius:100px;
+    background-color: blue;
+    animation-name: nur;
+}
+
+.ball:hover {
+    animation: nur 1.5s infinite  ;
+    
+}
+@keyframes nur {
+    0% {
+        transform: rotate(-0deg);
+        top: 300px;
+        color: black;
+        width: 150px;
+        height: 150px;
+    }
+
+   100% {
+    transform: rotate(360deg);
+        top: 300px;
+        background-color: gray;
+        width: 150px;
+        height: 150px;
+    }
+
+   
+}
+       
+  
